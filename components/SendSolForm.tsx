@@ -10,7 +10,7 @@ export const SendSolForm: FC = () => {
     const { connection } = useConnection();
     const { publicKey, sendTransaction } = useWallet();
     const link = () => {
-        return txSig ? `https://explorer.solana.com/tx/${txSig}?cluster=devnet` : ''
+        return txSig ? `https://explorer.solana.com/tx/${txSig}?cluster=custom` : ''
     }
 
     const sendSol = event => {
